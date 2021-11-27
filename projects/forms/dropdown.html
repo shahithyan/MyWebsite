@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DropDown</title>
+        <link rel="stylesheet" type="text/css" href="./../css/style.css">
+    </head>
+    <script src="./../js/dropdown.js"></script>
+    <style>         
+        #pokemonImg{
+            width: 300px;
+            height: 300px;
+        } 
+    </style>
+    <body>   
+        <form>
+            <label for="pokemon">Choose a Pokemon:</label>
+            <select name="pokemon" id="pokemon" onchange="showPokemon()">
+                <option value="Charmander">Charmander</option>
+                <option value="Charmeleon">Charmeleon</option>
+                <option value="Charizard">Charizard</option>
+            </select>
+            <br><br>
+        </form>
+        <br><br>
+        <img src ="./../pictures/charmander.jpg" id="pokemonImg">
+    </body>
+</html>

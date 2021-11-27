@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./../css/style.css">
+        <title>Login page</title>
+    </head>
+    <script src="./../js/login.js"></script>
+    <style>
+    #login{
+        margin-left: 500px;
+        margin-top: 200px;
+    }
+    #loginFailure{
+        display: none;
+        background-color: red;
+        width: fit-content;
+    }
+    </style>
+    <body>
+        <div id="login">
+            <p id="loginFailure">Username or password is wrong.</p>
+            <form onsubmit="return false">
+                <label for="userName">USERNAME</label>
+                <input type="text" id="userName" name="userName"><br><br>
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" name="password"><br><br>
+                <input type="submit" onclick="login()" value="login">
+            </form>
+        </div>
+    </body>
+</html>
