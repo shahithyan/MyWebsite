@@ -3,105 +3,61 @@
     <head>
         <title>Projects</title>
         <style>
-            body{
-                margin: 0;
-                font-family: cursive;
-                font-weight: 300;
+            table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
             }
-            .container{
-                width: 85%;
-                margin: 0 auto;
-                margin-left: -200px;
-            }
-            header{
-                background-color: aqua;
-            }
-            header::after{
-                content: "";
-                display: table;
-                clear: both;
-            }
-            nav{
-                float: right;
-            }
-            nav ul{
-                margin: 0;  
-                padding: 0;
-                list-style: none;
-            }
-            nav li{
-                display: inline-block;
-                margin-left: 70px;
-                padding-top: 45px;
-                position: relative;
-                margin-bottom: 50px;
-            }
-            nav a{
-                color: #444;
-                text-decoration: none;
-                text-transform: uppercase;
-                font-size: 16px;
-            }
-            nav a:hover{
-                color: #000;
-            }
-            nav a::before{
-                content: "";
-                display: block;
-                height: 5px;
-                background-color: #444;
-                position: absolute;
-                top: 0;
-                width: 0%;
-                transition: all ease-in-out 200ms;
 
+            td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
             }
-            nav a:hover::before{
-                width: 100%;
+
+            tr:nth-child(even) {
+            background-color: #dddddd;
             }
         </style>
+        
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+            $(function() {
+                $("#nav-placeholder").load("nav.html");
+            });
+        </script>
     </head>
     <body>
-        <header>
-            <div class="container">
-                <nav>
-                    <ul>
-                        <li><a href="./info.html">Info</a></li>
-                        <li><a href="./projects.html">Projects</a></li>
-                        <li><a href="#">Family</a></li>
-                        <li><a href="#">Extracurricular activites</a></li>
-                        
-                    </ul>
-    
-                </nav>
-            </div>
-        </header>
+        <div id="nav-placeholder">
+
+        </div>
+        
         I have done a lot a computer programming projects, here are links to them:
-        <a href="./projects/forms/acdc.html">1</a>
-        <a href="./projects/forms/bakuganresult.html">2</a>
+        <a href="./projects/forms/keyname.html"></a>
+        <a href="./projects/forms/toggle.html"></a>
+        <a href="./projects/forms/name.html"></a>
+        <a href="./projects/forms/quiz.html"></a>
+        <a href="./projects/forms/calculator.html"></a>
+        <a href="./projects/forms/acdc.html"></a>
+        <a href="./projects/forms/bakuganresult.html"></a>
         <a href="./projects/forms/blink.html"></a>
         <a href="./projects/forms/butter.html"></a>
         <a href="./projects/forms/button.html"></a>
-        <a href="./projects/forms/calculator.html"></a>
         <a href="./projects/forms/copy.html"></a>
         <a href="./projects/forms/dropdown.html"></a>
         <a href="./projects/forms/enter.html"></a>
         <a href="./projects/forms/imgbutton.html"></a>
         <a href="./projects/forms/jquery.html"></a>
-        <a href="./projects/forms/keyname.html"></a>
         <a href="./projects/forms/led.html"></a>
         <a href="./projects/forms/login.html"></a>
         <a href="./projects/forms/loginsuccesful.html"></a>
         <a href="./projects/forms/music.html"></a>
-        <a href="./projects/forms/name.html"></a>
         <a href="./projects/forms/pokeresult.html"></a>
         <a href="./projects/forms/progressbar.html"></a>
         <a href="./projects/forms/querySelector.html"></a>
         <a href="./projects/forms/queryselectorall.html"></a>
-        <a href="./projects/forms/quiz.html"></a>
         <a href="./projects/forms/radiobutton.html"></a>
         <a href="./projects/forms/surgeresult.html"></a>
-        <a href="./projects/forms/toggle.html"></a>
         <a href="./projects/js/button.js"></a>
         <a href="./projects/js/calculator.js"></a>
         <a href="./projects/js/dropdown.js"></a>
@@ -109,5 +65,72 @@
         <a href="./projects/js/login.js"></a>
         <a href="./projects/js/progressbar.js"></a>
         <a href="./projects/js/radiobutton.js"></a>
-        <a href="./projects/pictures/6gYf5D.jpg"></a>
+        <a href="./projects/tags/bootstrap.html"></a>
+        <a href="./projects/tags/bootstrap2.html"></a>
+        <a href="./projects/tags/canvas.html"></a>
+        <a href="./projects/tags/divspan.html"></a>
+        <a href="./projects/tags/htmltags.html"></a>
+        <a href="./projects/tags/lorem.html"></a>
+        <a href="./projects/tags/marquee.html"></a>
+        <a href="./projects/tags/misc.html"></a>
+        <a href="./projects/tags/Mygoalstabe.html"></a>
+        <a href="./projects/tags/Myheadings.html"></a>
+        <a href="./projects/tags/Myimage.html"></a>
+        <a href="./projects/tags/Mylink.html"></a>
+        <a href="./projects/tags/Mylist.html"></a>
+        <a href="./projects/tags/nav.html"></a>
+        <a href="./projects/tags/Soccer.html"></a>
+        <a href="./projects/tags/video.html"></a>
+        <br>
+        <br>
+        <table>
+            <tr>
+                <th>S.No </th>
+                <th>Project Name</th>
+                <th>Project Link</th>
+            </tr>
+
+            <tr>
+                <td> 1</td>
+                <td>Keyname</td>
+                <td><a href="./projects/forms/keyname.html" target="_blank">Click here</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Toggle</td>
+                <td><a href="./projects/forms/toggle.html" target="_blank">Click here</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Name</td>
+                <td><a href="./projects/forms/name.html" target="_blank">Click here</a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Quiz</td>
+                <td><a href="./projects/forms/quiz.html" target="_blank">Click here</a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Calculator</td>
+                <td><a href="./projects/forms/name.html" target="_blank">Click here</a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>BakuganResult</td>
+                <td><a href="./projects/forms/" target="_blank">Click here</a></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Blink</td>
+                <td><a href="./projects/forms/blink.html" target="_blank">Click here</a></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>butter</td>
+                <td><a href="./projects/forms/butter.html" target="_blank">Click here</a></td>
+            </tr>
+        </table>
+    </body>
+
 </html>
